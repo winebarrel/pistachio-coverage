@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pistachio coverage</title>
+<style>
+:root { color-scheme: light dark; --fg: #1f2328; --bg: #fff; --line: #d1d9e0; --bar: #2da44e; --track: #eaeef2; }
+@media (prefers-color-scheme: dark) {
+  :root { --fg: #e6edf3; --bg: #0d1117; --line: #3d444d; --bar: #3fb950; --track: #262c36; }
+}
+body { margin: 0 auto; max-width: 960px; padding: 16px; font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--fg); background: var(--bg); }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 4px 8px; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
+th:first-child, td:first-child { text-align: left; white-space: normal; word-break: break-all; }
+a { color: inherit; }
+.bar { display: inline-block; width: 80px; height: 8px; margin-left: 8px; background: var(--track); vertical-align: middle; }
+.bar span { display: block; height: 100%; background: var(--bar); }
+</style>
+</head>
+<body>
+<h1>Coverage: 97.0%</h1>
+<table>
+<thead><tr><th>File</th><th>Statements</th><th>Missed</th><th>Coverage</th></tr></thead>
+<tbody>
+<tr><td><a href="coverage.html#file59">internal/dsqlproxy/proxy.go</a></td><td>123</td><td>19</td><td>84.6%<span class="bar"><span style="width: 84.6%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file91">parser/policy.go</a></td><td>59</td><td>9</td><td>84.7%<span class="bar"><span style="width: 84.7%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file97">planfile.go</a></td><td>22</td><td>3</td><td>86.4%<span class="bar"><span style="width: 86.4%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file92">parser/routine.go</a></td><td>199</td><td>24</td><td>87.9%<span class="bar"><span style="width: 87.9%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file64">internal/jsonschema/reflect.go</a></td><td>96</td><td>11</td><td>88.5%<span class="bar"><span style="width: 88.5%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file65">internal/pgast/pgast.go</a></td><td>38</td><td>4</td><td>89.5%<span class="bar"><span style="width: 89.5%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file12">catalog/routines.go</a></td><td>29</td><td>3</td><td>89.7%<span class="bar"><span style="width: 89.7%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file93">parser/trigger.go</a></td><td>30</td><td>3</td><td>90.0%<span class="bar"><span style="width: 90.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file103">state_hash.go</a></td><td>41</td><td>4</td><td>90.2%<span class="bar"><span style="width: 90.2%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file1">apply_from.go</a></td><td>32</td><td>3</td><td>90.6%<span class="bar"><span style="width: 90.6%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file8">catalog/domains.go</a></td><td>45</td><td>4</td><td>91.1%<span class="bar"><span style="width: 91.1%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file5">catalog/composite_types.go</a></td><td>47</td><td>4</td><td>91.5%<span class="bar"><span style="width: 91.5%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file11">catalog/policies.go</a></td><td>24</td><td>2</td><td>91.7%<span class="bar"><span style="width: 91.7%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file26">cmd/command/pager.go</a></td><td>36</td><td>3</td><td>91.7%<span class="bar"><span style="width: 91.7%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file23">cmd/command/fmt.go</a></td><td>54</td><td>4</td><td>92.6%<span class="bar"><span style="width: 92.6%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file29">cmd/pista/main.go</a></td><td>29</td><td>2</td><td>93.1%<span class="bar"><span style="width: 93.1%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file4">catalog/columns.go</a></td><td>31</td><td>2</td><td>93.5%<span class="bar"><span style="width: 93.5%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file14">catalog/stats.go</a></td><td>64</td><td>4</td><td>93.8%<span class="bar"><span style="width: 93.8%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file15">catalog/tables.go</a></td><td>83</td><td>5</td><td>94.0%<span class="bar"><span style="width: 94.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file57">format/format.go</a></td><td>343</td><td>20</td><td>94.2%<span class="bar"><span style="width: 94.2%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file96">plan.go</a></td><td>78</td><td>4</td><td>94.9%<span class="bar"><span style="width: 94.9%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file90">parser/parser.go</a></td><td>1440</td><td>71</td><td>95.1%<span class="bar"><span style="width: 95.1%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file6">catalog/constraints.go</a></td><td>46</td><td>2</td><td>95.7%<span class="bar"><span style="width: 95.7%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file17">catalog/views.go</a></td><td>47</td><td>2</td><td>95.7%<span class="bar"><span style="width: 95.7%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file46">diff/views.go</a></td><td>241</td><td>10</td><td>95.9%<span class="bar"><span style="width: 95.9%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file60">internal/dsqlproxy/rewrite.go</a></td><td>156</td><td>6</td><td>96.2%<span class="bar"><span style="width: 96.2%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file45">diff/triggers.go</a></td><td>165</td><td>6</td><td>96.4%<span class="bar"><span style="width: 96.4%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file47">diff_all.go</a></td><td>615</td><td>19</td><td>96.9%<span class="bar"><span style="width: 96.9%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file0">apply.go</a></td><td>143</td><td>4</td><td>97.2%<span class="bar"><span style="width: 97.2%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file53">dump_explain.go</a></td><td>36</td><td>1</td><td>97.2%<span class="bar"><span style="width: 97.2%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file7">catalog/dependents.go</a></td><td>79</td><td>2</td><td>97.5%<span class="bar"><span style="width: 97.5%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file54">exclusive.go</a></td><td>40</td><td>1</td><td>97.5%<span class="bar"><span style="width: 97.5%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file66">internal/pgast/walk.go</a></td><td>82</td><td>2</td><td>97.6%<span class="bar"><span style="width: 97.6%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file55">explain.go</a></td><td>509</td><td>12</td><td>97.6%<span class="bar"><span style="width: 97.6%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file38">diff/persistence.go</a></td><td>44</td><td>1</td><td>97.7%<span class="bar"><span style="width: 97.7%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file44">diff/tables.go</a></td><td>1136</td><td>21</td><td>98.2%<span class="bar"><span style="width: 98.2%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file84">model/util.go</a></td><td>59</td><td>1</td><td>98.3%<span class="bar"><span style="width: 98.3%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file62">internal/gitfile/gitfile.go</a></td><td>60</td><td>1</td><td>98.3%<span class="bar"><span style="width: 98.3%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file63">internal/jsonschema/nullable.go</a></td><td>61</td><td>1</td><td>98.4%<span class="bar"><span style="width: 98.4%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file34">diff/desugar.go</a></td><td>70</td><td>1</td><td>98.6%<span class="bar"><span style="width: 98.6%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file52">dump.go</a></td><td>229</td><td>3</td><td>98.7%<span class="bar"><span style="width: 98.7%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file40">diff/rename.go</a></td><td>391</td><td>5</td><td>98.7%<span class="bar"><span style="width: 98.7%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file88">parser/directive.go</a></td><td>331</td><td>4</td><td>98.8%<span class="bar"><span style="width: 98.8%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file100">remap.go</a></td><td>262</td><td>3</td><td>98.9%<span class="bar"><span style="width: 98.9%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file106">toposort/schema.go</a></td><td>211</td><td>2</td><td>99.1%<span class="bar"><span style="width: 99.1%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file39">diff/policies.go</a></td><td>108</td><td>1</td><td>99.1%<span class="bar"><span style="width: 99.1%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file69">lint/run.go</a></td><td>112</td><td>1</td><td>99.1%<span class="bar"><span style="width: 99.1%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file95">parser/validate.go</a></td><td>166</td><td>1</td><td>99.4%<span class="bar"><span style="width: 99.4%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file50">dsql/dsql.go</a></td><td>208</td><td>1</td><td>99.5%<span class="bar"><span style="width: 99.5%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file2">bulk_alter.go</a></td><td>67</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file3">catalog/catalog.go</a></td><td>4</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file9">catalog/enums.go</a></td><td>16</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file10">catalog/indexes.go</a></td><td>13</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file13">catalog/sequences.go</a></td><td>10</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file16">catalog/triggers.go</a></td><td>9</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file18">client.go</a></td><td>42</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file19">cmd/command/apply.go</a></td><td>21</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file20">cmd/command/apply_from.go</a></td><td>10</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file21">cmd/command/diff.go</a></td><td>11</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file22">cmd/command/dump.go</a></td><td>28</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file24">cmd/command/json.go</a></td><td>4</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file25">cmd/command/lint.go</a></td><td>17</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file27">cmd/command/parse.go</a></td><td>9</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file28">cmd/command/plan.go</a></td><td>25</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file30">config.go</a></td><td>36</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file31">diff.go</a></td><td>71</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file32">diff/collation.go</a></td><td>11</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file33">diff/composite_types.go</a></td><td>85</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file35">diff/domains.go</a></td><td>79</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file36">diff/drop_policy.go</a></td><td>10</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file37">diff/enums.go</a></td><td>77</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file41">diff/routines.go</a></td><td>81</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file42">diff/sequences.go</a></td><td>60</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file43">diff/storage_params.go</a></td><td>26</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file48">document/document.go</a></td><td>125</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file49">drop_policy.go</a></td><td>3</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file51">dsql_options.go</a></td><td>35</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file56">filter.go</a></td><td>26</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file58">format/strip.go</a></td><td>23</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file61">internal/dsqlproxy/tags.go</a></td><td>21</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file67">lint/env.go</a></td><td>34</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file68">lint/rule.go</a></td><td>111</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file70">literal.go</a></td><td>155</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file71">model/column.go</a></td><td>17</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file72">model/composite_type.go</a></td><td>23</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file73">model/constraint.go</a></td><td>26</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file74">model/domain.go</a></td><td>37</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file75">model/enum.go</a></td><td>15</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file76">model/identity.go</a></td><td>45</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file77">model/index.go</a></td><td>8</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file78">model/json.go</a></td><td>1</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file79">model/policy.go</a></td><td>45</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file80">model/routine.go</a></td><td>109</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file81">model/sequence.go</a></td><td>29</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file82">model/table.go</a></td><td>196</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file83">model/trigger.go</a></td><td>21</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file85">model/view.go</a></td><td>59</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file86">options.go</a></td><td>64</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file87">parse_schema.go</a></td><td>3</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file89">parser/location.go</a></td><td>58</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file94">parser/undeclared.go</a></td><td>1</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file98">pre_sql.go</a></td><td>10</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file99">refuse_hazard.go</a></td><td>26</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file101">rename_refs.go</a></td><td>88</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file102">schema_filter.go</a></td><td>19</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file104">timeout.go</a></td><td>26</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+<tr><td><a href="coverage.html#file105">toposort/graph.go</a></td><td>39</td><td>0</td><td>100.0%<span class="bar"><span style="width: 100.0%"></span></span></td></tr>
+</tbody>
+</table>
+</body>
+</html>
